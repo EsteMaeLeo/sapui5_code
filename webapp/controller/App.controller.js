@@ -11,23 +11,23 @@ sap.ui.define(
       //show native vanilla js alert
       //alert("hello There! SAPUI5");
 
-      onInit: function () {
-        //set data model in the view
-        var oData = {
-          recipient: {
-            name: "UI5",
-          },
-        };
-        var oModel = new JSONModel(oData);
-        this.getView().setModel(oModel);
-        //set i18n model view
-        var i18nModel = new ResourceModel({
-          bundleName: "sap.ui.demo.walkthrough.i18n.i18n",
-          supportedLocales: [""],
-          fallbackLocale: "",
-        });
-        this.getView().setModel(i18nModel, "i18n");
-      },
+      // onInit: function () {
+      //   //set data model in the view
+      //   var oData = {
+      //     recipient: {
+      //       name: "UI5",
+      //     },
+      //   };
+      //   var oModel = new JSONModel(oData);
+      //   this.getView().setModel(oModel);
+      //   //set i18n model view
+      //   var i18nModel = new ResourceModel({
+      //     bundleName: "sap.ui.demo.walkthrough.i18n.i18n",
+      //     supportedLocales: [""],
+      //     fallbackLocale: "",
+      //   });
+      //   this.getView().setModel(i18nModel, "i18n");
+      // },
 
       onShowHello: function () {
         //read msg from i18n model
